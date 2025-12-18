@@ -8,7 +8,7 @@ import { useStore } from '../store';
 export const ChristmasPelican = () => {
     const ref = useRef<THREE.Group>(null);
     const meshRef = useRef<THREE.Mesh>(null);
-    const texture = useLoader(TextureLoader, '/pelican_star.png');
+    const texture = useLoader(TextureLoader, 'pelican_star.png'); // Use relative path for GH Pages compatibility
 
     useFrame((state) => {
         if (!ref.current) return;
